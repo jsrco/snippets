@@ -10,5 +10,8 @@
  */ 
 
 /**
- * 
+ * notice any overlapping subproblems
+ * decide what is the trivially smallest input
+ * think recursively to use memo
+ * think iteratively to use tab
  */
