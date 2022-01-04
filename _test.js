@@ -1,13 +1,18 @@
 /**
  * Problem Solving Approach
  * 
- * -Understand the Problem
+ * Understand the Problem
+ * -restate the problem in own words
+ * -what are the inputs 
+ * -what are the outputs
+ * -can the outputs be determined from the inputs
+ * -how should I lable the important pieces of data that are a part of the problem
+ *  
+ * Explore Concrete Examples
  * 
- * -Explore Concrete Examples
+ * Break It Down
  * 
- * -Break It Down
+ * Solve Or Simplify
  * 
- * -Solve Or Simplify
- * 
- * -Look Back and Refactor
+ * Look Back and Refactor
  */
