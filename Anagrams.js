@@ -1,27 +1,26 @@
-let anagram = (arg1, arg2) =>{
-    let arr1 = Array.from(arg1)
-    let arr2 = Array.from(arg2)
-    if(arr1.length !== arr2.length){
+const validAnagram = (first, second) => {
+    if (first.length !== second.length) {
         return false;
     }
-    let frequencyCounter1 = {}
-    let frequencyCounter2 = {}
 
-    for(let val of arr1){
-        frequencyCounter1[val] = (frequencyCounter1[val] || 0) + 1
+    const lookup = {};
+
+    for (let i = 0; i < first.length; i++) {
+        let letter = first[i];
+        // if letter exists, increment, otherwise set to 1
+        lookup[letter] ? lookup[letter] += 1 : lookup[letter] = 1;
     }
-    for(let val of arr2){
-        frequencyCounter2[val] = (frequencyCounter2[val] || 0) + 1       
-    }
-    for(let key in frequencyCounter1){
-        if(!(key in frequencyCounter2)){
-            return false
+
+    for (let i = 0; i < second.length; i++) {
+        let letter = second[i];
+        // can't find letter or letter is zero then it's not an anagram
+        if (!lookup[letter]) {
+            return false;
+        } else {
+            lookup[letter] -= 1;
         }
-        if(frequencyCounter2[key] !== frequencyCounter1[key]){
-            return false
-        }
     }
-    return true
+    return true;
 }
 
 console.log(anagram("steve", 'sevet'))
