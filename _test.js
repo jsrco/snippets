@@ -6,7 +6,7 @@
  * -what are the inputs 
  * -what are the outputs
  * -can the outputs be determined from the inputs
- * -how should I lable the important pieces of data that are a part of the problem
+ * -how should I label the important pieces of data that are a part of the problem
  *  
  * Explore Concrete Examples
  * -start with simple examples
@@ -32,8 +32,7 @@
 
 /**
  * Frequency Counter - for comparing two arrays using an object profile
- * Mulitiple Pointers - two reference indexes that allow you to shift through a sorted array
+ * Multiple Pointers - two reference indexes that allow you to shift through a sorted array
  * Sliding Window - create a window that slides through the data of the array, + or - from it
  * Divide and Conquer - divide a data set into smaller chunks to search from
  */
-
